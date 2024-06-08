@@ -1,6 +1,7 @@
 import React from "react";
 import clsx from "clsx";
 import { Type, TextSize, TextColor, TextBold } from "../typography";
+import { Input } from "../input";
 
 import backgroundSrc from "../../assets/header_background.png";
 import cn from "./style.module.scss";
@@ -19,6 +20,12 @@ export default function TasksHeader() {
         >
           My Tasks
         </Type>
+        <Input type="text" placeholder="Title" style={{ width: "100%" }} />
+        <Input
+          type="text"
+          placeholder="Description"
+          style={{ width: "100%", marginTop: "1.25rem" }}
+        />
       </div>
     </div>
   );
