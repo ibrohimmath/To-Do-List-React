@@ -1,0 +1,27 @@
+.input {
+  border: none;
+  outline: none;
+  &::placeholder {
+    color: black;
+  }
+
+  &.input-radius--sm {
+    border-radius: 4px;
+  }
+
+  &.input-background--primary {
+    background-color: var(--secondary-color);
+  }
+
+  &.input-padding--md {
+    padding: 0.5rem 0.8rem;
+  }
+
+  &.input-size--md {
+    font-size: 1.1rem;
+  }
+
+  &.input-boldness--normal {
+    font-weight: normal;
+  }
+}
