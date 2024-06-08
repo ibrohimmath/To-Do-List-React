@@ -1,6 +1,7 @@
 .tasksheader {
   position: relative;
-  height: 39vh;
+  min-height: 39vh;
+  height: fit-content;
   z-index: 1;
   img {
     position: absolute;
