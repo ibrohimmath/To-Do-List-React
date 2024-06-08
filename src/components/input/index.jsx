@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import clsx from "clsx";
 import cn from "./style.module.scss";
 
@@ -27,16 +27,19 @@ export const InputBold = {
   normal: "input-boldness--normal",
 };
 
-export function Input({
-  type = "text",
-  placeholder,
-  radius = InputRadius.default,
-  background = InputBackground.default,
-  padding = InputPadding.default,
-  size = InputSize.default,
-  boldness = InputBold.default,
-  style = {},
-}) {
+export const Input = forwardRef(function Input(props, ref) {
+  const {
+    type = "text",
+    placeholder,
+    radius = InputRadius.default,
+    background = InputBackground.default,
+    padding = InputPadding.default,
+    size = InputSize.default,
+    boldness = InputBold.default,
+    style = {},
+    onChange,
+  } = props;
+
   const classNames = clsx(
     cn["input"],
     cn[radius],
@@ -52,6 +55,8 @@ export function Input({
       placeholder={placeholder}
       className={classNames}
       style={style}
+      onChange={onChange}
+      ref={ref}
     />
   );
-}
+});
