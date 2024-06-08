@@ -5,8 +5,8 @@ import "./index.css";
 
 export default function App() {
   return (
-    <div>
+    <Container>
       <TasksHeader />
-    </div>
+    </Container>
   );
 }
