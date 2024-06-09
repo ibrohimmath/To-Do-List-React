@@ -37,6 +37,7 @@ export const Input = forwardRef(function Input(props, ref) {
     size = InputSize.default,
     boldness = InputBold.default,
     style = {},
+    value,
     onChange,
   } = props;
 
@@ -55,6 +56,7 @@ export const Input = forwardRef(function Input(props, ref) {
       placeholder={placeholder}
       className={classNames}
       style={style}
+      value={value}
       onChange={onChange}
       ref={ref}
     />

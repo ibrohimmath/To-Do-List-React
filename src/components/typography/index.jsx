@@ -25,7 +25,7 @@ export const TextBold = {
 
 export function Type({
   tag = "span",
-  style = "",
+  style = {},
   size = TextSize.default,
   color = TextColor.default,
   boldness = TextBold.default,

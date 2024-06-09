@@ -1,4 +1,5 @@
 button {
+  display: block;
   border: none;
   border-radius: 25px;
   box-shadow: 0px 4px 4px 0px #acd4e1;
@@ -6,4 +7,7 @@ button {
   background: linear-gradient(90deg, #a8d2a5 0%, #acd4e1 115.2%);
   font-size: 1.1rem;
   cursor: pointer;
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+  }
 }
