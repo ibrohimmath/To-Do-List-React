@@ -15,7 +15,7 @@ export default function TaskList({ change, setChange }) {
       const tasksCurr = getTasks();
       if (tasks.length > tasksCurr.length) {
         setShowToast(true);
-        setToastMessages("Task were successfully deleted");
+        setToastMessages("Task was successfully deleted");
       }
       const timeout = setTimeout(() => {
         setTasks(tasksCurr);
